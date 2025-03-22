@@ -1,7 +1,7 @@
-name: Labeler
+name: chakuuu27
 
 description: Adds labels to an Issue or PR
-inputs:
+inputs: 
   token:
     description: defaults to GITHUB_TOKEN, otherwise can use a PAT
     required: false
@@ -19,7 +19,7 @@ inputs:
     description: don't apply labels if there are already labels added
     required: false
 
-runs:
+runs: 
   using: 'composite'
   steps:
     - name: Add label to an issue or pr
@@ -31,3 +31,5 @@ runs:
         REMOVE_LABELS: ${{ inputs.removeLabels }}
         IGNORE_IF_ASSIGNED: ${{ inputs.ignoreIfAssigned }}
         IGNORE_IF_LABELED: ${{ inputs.ignoreIfLabeled }}
+    description: apply labels if there are already labels added
+    description: 
